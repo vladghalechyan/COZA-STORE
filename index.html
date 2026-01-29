@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #check:checked~.mobilemenu {
+        height: 300px;
+    }
+</style>
+
+<body>
+    <header class="flex p-[20px] relative justify-around max-lg:justify-between gap-[30px]">
+        <div class="flex items-center gap-[20px]"><a href=""><img
+                    src="https://preview.colorlib.com/theme/cozastore/images/icons/logo-01.webp" alt=""></a>
+            <nav class="ml-12 max-lg:hidden">
+                <ul class="flex  gap-[30px]">
+                    <li><a class=" hover:text-blue-400 transition-all" href="">Home</a></li>
+                    <li><a class=" hover:text-blue-400 transition-all" href="">Shop</a></li>
+                    <li><a class=" hover:text-blue-400 transition-all" href="">Features</a></li>
+                    <li><a class=" hover:text-blue-400 transition-all" href="">Blog</a></li>
+                    <li><a class=" hover:text-blue-400 transition-all" href="">About</a></li>
+                    <li><a class=" hover:text-blue-400 transition-all" href="">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="flex justify-center items-center gap-3">
+            <ul class="flex gap-[30px] ">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-regular fa-heart"></i></li>
+            </ul>
+            <label for="check" class="lg:hidden max-lg-flex"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" class="hidden" id="check">
+            <nav
+                class=" mobilemenu transition-all absolute max-lg:flex lg:hidden right-0 h-0 overflow-hidden top-full bg-gray-400 w-[400px]">
+                <ul class="flex w-full flex-col gap-[30px]">
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">Home</a></li>
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">Shop</a></li>
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">Features</a></li>
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">Blog</a></li>
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">About</a></li>
+                    <li><a class=" text-center block hover:text-blue-400 transition-all" href="">Contact</a></li>
+                </ul>
+        </div>
+
+        </nav>
+    </header>
+
+
+
+
+    <div
+        class=" w-full flex flex-col items-start px-12 h-[90vh] max-md:h-[50vh] bg-cover bg-[url(https://preview.colorlib.com/theme/cozastore/images/slide-03.webp)] justify-center">
+        <div class="flex flex-col translate-x-[100px] flex justify-between items-start gap-3 flex-col gap-6">
+            <div>
+                <h4 class="text-2xl">Man Collection 2030</h4>
+                <h1 class="text-7xl max-md:text-5xl  font-bold">New Arrlivals </h1>
+            </div>
+            <button
+                class="cursor-pointer opacity-0 group-hover:opacity-100 translate-y-[15px] group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300  ">SHOP
+                NEW</button>
+        </div>
+    </div>
+    <div class="flex w-full justify-center p-[100px_0_0_0] gap-6 items-center max-2xl:flex-wrap  max-xl:flex-wrap ">
+        <div class="  cursor-pointer border-gray-400 border-1 w-[450px] h-[350px] relative group max-2xl:w-[350px] max-2xl:h-[300px] max-lg:w-[100%]"><img
+                class="size-full object-cover" src="	https://preview.colorlib.com/theme/cozastore/images/banner-01.webp"
+                alt="">
+            <div
+                class="absolute bg-transparent flex justify-between items-start gap-3 flex-col group-hover:bg-[rgba(103,117,214,0.8)] transition-all duration-300 p-9 inset-0">
+                <div>
+                    <h4 class="text-3xl group-hover:text-white transition-all font-bold">Women</h4>
+                    <span class="group-hover:text-white transition-all">spring 2030</span>
+                </div>
+                <button
+                    class=" cursor-pointer opacity-0 group-hover:opacity-100 translate-y-[15px] group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300">SHOP
+                    NEW</button>
+            </div>
+        </div>
+        <div class=" cursor-pointer border-gray-400 border-1 w-[450px] h-[350px] relative group  max-2xl:w-[350px] max-2xl:h-[300px] max-lg:w-[100%]"><img
+                class="size-full object-cover" src="	https://preview.colorlib.com/theme/cozastore/images/banner-02.webp"
+                alt="">
+            <div
+                class="absolute bg-transparent group-hover:bg-[rgba(103,117,214,0.8)] flex justify-between items-start gap-3 flex-col transition-all duration-300 p-9 inset-0">
+                <div>
+                    <h4 class="text-3xl group-hover:text-white transition-all font-bold">Men</h4>
+                    <span class="group-hover:text-white transition-all">spring 2030</span>
+                </div>
+                <button
+                    class=" cursor-pointer opacity-0 group-hover:opacity-100 translate-y-[15px] group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300">SHOP
+                    NEW</button>
+            </div>
+        </div>
+        <div class=" cursor-pointer border-gray-400 border-1 w-[450px] h-[350px] relative group  max-2xl:w-[350px] max-2xl:h-[300px] max-lg:w-[100%] "><img
+                class="size-full object-cover" src="	https://preview.colorlib.com/theme/cozastore/images/banner-03.webp"
+                alt="">
+            <div
+                class="absolute bg-transparent flex justify-between items-start gap-3 flex-col group-hover:bg-[rgba(103,117,214,0.8)] transition-all duration-300 p-9 inset-0">
+                <div>
+                    <h4 class="text-3xl group-hover:text-white transition-all font-bold ">Accessories</h4>
+                    <span class="group-hover:text-white transition-all"> New Trend </span>
+                </div>
+                <button
+                    class=" cursor-pointer opacity-0 group-hover:opacity-100 translate-y-[15px] group-hover:translate-y-0 group-hover:opacity-100 group-hover:text-white transition-all duration-300">SHOP
+                    NEW</button>
+            </div>
+        </div>
+
+    </div>
+    <div class=" py-[100px] px-[50px] flex justify-start items-start flex-col gap-6 max-lg:flex-wrap ">
+        <h1 class="text-5xl font-bold">Product Overview</h1>
+        <div class="flex  w-full items-center justify-between max-xl:flex max-lg:flex-wrap ">
+
+            <ul class=" text-gray-600 w-full flex gap-[30px] max-lg:flex-wrap ">
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all">All
+                        Products</a></li>
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all ">Women</a>
+                </li>
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all">Men</a>
+                </li>
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all">Bag</a>
+                </li>
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all">Shoes</a>
+                </li>
+                <li><a href=""
+                        class="relative before:absolute py-1 before:w-full before:h-[1px] before:bg-black before:top-full before:left-0 before:opacity-0 hover:before:opacity-100 hover:text-black transition-all duration-400 before:transition-all">Watches</a>
+                </li>
+            </ul>
+            <div class="flex justify-center items-center gap-6">
+                <button
+                    class=" cursor-pointer flex border-1 border-gray-200 text-gray-600 w-[90px] h-[35px] justify-center items-center hover:bg-[rgba(103,117,214,0.8)] transition-all duration-400 hover:text-white "><i
+                        class="icon-filter cl2 m-r-6 fs-15 trans-04 fa-solid fa-filter   "></i>Filter</button>
+                <button
+                    class="cursor-pointer flex border-1 border-gray-200 text-gray-600 w-[100px] h-[35px] justify-center items-center hover:bg-[rgba(103,117,214,0.8)] transition-all duration-400 hover:text-white"><i
+                        class="icon-search cl2 m-r-6 fs-15 trans-04 fa-solid fa-magnifying-glass"></i>Search </button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="max-w-[1500px] m-auto h-auto p-12 flex justify-center items-center flex-wrap gap-[20px] ">
+
+
+
+        <div class="w-[300px] flex justify-center items-start flex-col">
+            <div class="  relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-01.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black  ">Quick
+                    View</button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Esprit Ruffle Shirt</h3>
+                    <span class="text-gray-600">$16.64
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="w-[300px] flex justify-center items-start flex-col">
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-02.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View</button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Herschel supply</h3>
+                    <span class="text-gray-600">$35.31
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-start flex-col">
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-03.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Only Check Trouser</h3>
+                    <span class="text-gray-600">$25.50
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-04.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Classic Trench Coat</h3>
+                    <span class="text-gray-600">$75.00
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-05.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Front Pocket Jumper</h3>
+                    <span class="text-gray-600">$34.75
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-06.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Vintage Inspired Classic</h3>
+                    <span class="text-gray-600">$93.20
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-07.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Shirt in Stretch Cotton</h3>
+                    <span class="text-gray-600">$52.66
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+        <div>
+            <div class=" relative h-[400px] flex group justify-center overflow-hidden">
+                <img class="hover:scale-115  size-full object-cover transition-all duration-400"
+                    src="https://preview.colorlib.com/theme/cozastore/images/product-08.webp" alt="">
+                <button
+                    class="absolute top-full transition-all duration-400 py-2 px-3 group-hover:top-80 rounded-full bg-white cursor-pointer hover:text-white hover:bg-black">Quick
+                    View
+                </button>
+            </div>
+            <div class="flex justify-between items-center w-full">
+                <div>
+                    <h3
+                        class="text-gray-600 hover:text-[rgba(103,117,214,0.8)] transition-all duration-400 cursor-pointer">
+                        Pieces Metallic Printed</h3>
+                    <span class="text-gray-600">$18.96
+                    </span>
+                </div>
+                <button
+                    class="cursor-pointer shadow-xl shadow-gray-200 rounded-full flex justify-center items-center w-[30px] h-[30px] transition-all text-gray-600 hover:text-[rgba(103,117,214,0.8)]">
+                    <i class="fa-solid fa-heart "></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer  class="bg-[#222] py-24 px-2  ">
+
+        <div class="flex items-start justify-center gap-12  max-xl:flex-wrap">
+            <div class="w-[250px] flex flex-col gap-6">
+                <h2 class="font-bold text-white flex flex-col ">Categories</h2>
+                <ul class="text-[#b2b2b2] flex flex-col gap-3 ">
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all">Women</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all" >Men</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all" >Shoes</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all" >Watches</a></li>
+                </ul>
+            </div>
+            <div class="w-[250px] flex flex-col gap-6">
+                <h2 class="font-bold text-white flex flex-col " >Help</h2>
+                <ul class="text-[#b2b2b2] flex flex-col gap-3 ">
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all">Track Order</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all">Returns</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all">Shipping</a></li>
+                    <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="w-[300px] flex flex-col gap-6">
+                <h2 class="font-bold text-white flex flex-col ">GET IN TOUCH</h2>
+                
+                    <p class="text-[#b2b2b2]">Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on
+                        (+1) 96 716 6879</p> 
+                    <div >
+                        <ul class="text-[#b2b2b2] flex gap-6 flex-wrap ">
+                            <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="" class="hover:text-[rgba(103,117,214,0.8)] transition-all"><i class="fa-brands fa-pinterest-p"></i></a></li>
+
+                        </ul>
+                    </div>
+            </div>
+            <div class="flex flex-col w-[250px] gap-3">
+                <h2 class="text-white font-bold ">NEWSLATTER</h2>
+                <input class="border-1 border-l-0 border-r-0 border-t-0 outline-none text-white border-white hover:border-[rgba(103,117,214,0.8)]  " type="" placeholder="email@example.com"> 
+                <button class="bg-[rgba(103,117,214,0.8)] font-bold rounded-full w-[200px] h-[50px] text-white cursor-pointer hover:bg-white transition-all duration-400 hover:text-[rgba(103,117,214,0.8)] "> SUBSCRIBE  </button>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
